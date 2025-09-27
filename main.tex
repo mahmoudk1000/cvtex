@@ -1,0 +1,177 @@
+\documentclass[11pt]{article}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{references.bib}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[a4paper,left=1.5cm,right=1.5cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{parskip}
+\usepackage{multicol}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[sfdefault]{inter}
+
+% --- Colors ---
+\definecolor{accent}{HTML}{536878} % change if you want a different tint
+\definecolor{muted}{HTML}{4C566A}
+
+% --- Formatting ---
+\setlength{\parindent}{0pt}
+\setlist[itemize]{noitemsep, topsep=2pt}
+
+% --- Section style ---
+\newcommand{\cvsection}[1]{%
+  \vspace{6pt}%
+  {\large\bfseries\textcolor{accent}{#1}}\\[-4pt]%
+  \textcolor{accent}{\rule{\linewidth}{0.6pt}}%
+  \vspace{6pt}%
+}
+
+% --- Small cventry macro for the article class ---
+% Usage: \cventry{dates}{title}{organization}{location}{description-block}
+\newcommand{\cventry}[5]{%
+  {\textbf{#2}} \hfill {\small\textcolor{muted}{#1}}\\
+  {\small\itshape #3} \hfill {\small\textcolor{muted}{#4}}\\[-6pt]
+  #5
+  \vspace{6pt}
+}
+
+\begin{document}
+
+% ---------- Header ----------
+\begin{center}
+	{\Huge\bfseries Mahmoud Ayman Farouk} \\[6pt]
+	{\large\textcolor{accent}{DevOps \& SRE Engineer}} \\[8pt]
+	Alexandria, Egypt \\[6pt]
+
+	\href{mailto:mahmoud.a.asran@outlook.com}{mahmoud.a.asran@outlook.com} \quad • \quad
+	\href{tel:+201091794795}{+20 109 179 4795} \\[6pt]
+
+	\href{https://github.com/mahmoudk1000}{GitHub} \quad • \quad
+	\href{https://www.linkedin.com/in/mahmoudk1000}{LinkedIn} \quad • \quad
+	\href{https://mahmoudk1000.github.io/}{Portfolio}
+\end{center}
+
+\vspace{8pt}
+
+% ---------- Profile ----------
+\cvsection{Profile}
+I build reliable systems and enjoy the engineering behind them. I’m a hands-on DevOps/SRE who values automation, observability, and the craft of building well-designed services that are maintainable, testable and pleasant to operate. I write infrastructure and runtime code — including services and tooling in \texttt{Go} — so I can transform ideas from prototype to production. I love solving problems, tinkering with Linux internals, designing CI/CD and operator-driven automation, and sharing improvements with the community. I also design processes that help teams deliver value consistently and sustainably. I bring effort and attention to detail, shipping work that I trust, want to run, and can maintain with confidence.
+
+% ---------- Professional Experience ----------
+\cvsection{Experience}
+
+\cventry{Jul 2024 -- Present}{DevOps / SRE Engineer}{\href{https://atos.net}{Atos}}{Cairo, Egypt}{%
+	\begin{itemize}
+		\item Operate and improve Kubernetes clusters and surrounding environments to maintain reliability and scale.
+		\item Build automation with PowerShell, Ansible, and Terraform to eliminate toil and standardize provisioning.
+		\item Design and maintain CI/CD pipelines (Azure DevOps, GitHub Actions) to accelerate safe delivery and enforce quality gates.
+		\item Build PoCs and introduce tools or patterns that address operational challenges and improve workflows or help business.
+		\item Define SLIs and SLOs from SLAs; implement dashboards and alerts to measure compliance.
+		\item Apply SRE practices: monitoring, alerting, and centralized logging (Prometheus, Grafana, ELK) to deliver SLAs.
+		\item Troubleshoot incidents, identify root cause, isolate failures, and restore services.
+		\item Mentor colleagues and interns; sharing knowledge.
+	\end{itemize}
+}
+
+% To add more experiences, follow this pattern:
+% \cventry{dates}{title}{\href{url}{company}}{location}{%
+% 	\begin{itemize}
+% 		\item Achievement or responsibility 1.
+% 		\item Achievement or responsibility 2.
+% 	\end{itemize}
+% } \cite{experience-key}
+
+% ---------- Open Source / Projects ----------
+\cvsection{Open Source / Projects}
+
+FOSS advocate and active contributor across cloud-native and tooling ecosystems (vLLM, Keel, Nix, etc.).
+
+\textbf{\href{https://github.com/mahmoudk1000/azdo-runner-operator}{AzDO Runner Kubernetes Operator}}\\
+\begin{itemize}
+	\item Author and maintainer of a Kubernetes operator that provisions and manages on-demand Azure DevOps self-hosted runners as CRDs.
+	\item Focus areas: lifecycle safety (admission/mutating/validating webhooks), secure PAT handling, PVC-backed workspaces, and autoscaling runner fleets.
+	\item Built Helm charts and CI/CD pipelines for production-grade use.
+\end{itemize}
+
+\textbf{\href{https://nixos.org}{Nix \& Nixpkgs}}\\
+\begin{itemize}
+	\item Long-term reviewer and maintainer in the Nixpkgs ecosystem: package updates, module contributions, reproducibility fixes, and maintainership entries.
+	\item Contributed a large number of PRs across packages and modules.
+\end{itemize}
+
+% To add more projects, follow this pattern:
+% \textbf{\href{URL}{Project Name}} \cite{project-key}\\
+% \begin{itemize}
+% 	\item Project description and achievements.
+% \end{itemize}
+
+% ---------- Education ----------
+\cvsection{Education}
+
+\textbf{Alexandria University} \hfill Sep 2019 -- Jun 2023\\
+B.Sc. Computer Science \hfill Grade: Good
+
+\vspace{6pt}
+
+\textbf{Information Technology Institute (ITI)} \hfill Jul 2022 -- Aug 2022\\
+Linux \& DevOps Engineer Training \hfill Grade: Excellent
+
+% To add more education, follow this pattern:
+% \textbf{Institution Name} \hfill Dates\\
+% Degree/Program Name \hfill Grade/Achievement \cite{education-key}
+
+% ---------- Certifications ----------
+\cvsection{Certifications}
+\begin{multicols}{2}
+	\begin{itemize}[left=0pt, label={}]
+		\item DevOps Engineer — MaharaTech
+		\item Linux System Admin — MaharaTech
+		\item Linux \& DevOps Training — ITI, Egypt
+	\end{itemize}
+\end{multicols}
+
+% ---------- Technical Skills ----------
+\cvsection{Technical Skills}
+\begin{multicols}{3}
+	\begin{itemize}[left=0pt, label={}]
+		\item Linux
+		\item Azure
+		\item AWS
+		\item Virtualization
+		\item Kubernetes
+		\item Kubernetes Operators
+		\item Terraform
+		\item Ansible
+		\item Nix
+		\item Helm
+		\item GitHub Actions
+		\item Azure DevOps
+		\item Go
+		\item Bash
+		\item PowerShell
+		\item Python
+		\item Prometheus
+		\item Grafana
+		\item ELK
+		\item Git
+		\item GitHub
+	\end{itemize}
+\end{multicols}
+
+% ---------- Languages ----------
+\cvsection{Languages}
+\begin{multicols}{3}
+	\begin{itemize}[left=0pt, label={}]
+		\item Arabic
+		\item English
+		\item German
+	\end{itemize}
+\end{multicols}
+
+\printbibliography[heading=none]
+
+\end{document}
