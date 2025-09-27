@@ -33,7 +33,7 @@
             '';
             installPhase = ''
               mkdir -p $out
-              cp main.pdf $out/
+              cp main.pdf $out/mahmoud_farouk-devops-sre.pdf
             '';
           };
         }

@@ -21,4 +21,4 @@ jobs:
         uses: softprops/action-gh-release@v2
         if: github.ref_type == 'tag'
         with:
-          files: result/main.pdf
+          files: result/mahmoud_farouk-devops-sre.pdf
