@@ -1,8 +1,6 @@
 ---
 name: Release
-on:
-  push:
-    tags: ['*']
+on: push
 permissions:
   contents: write
 jobs:
@@ -18,7 +16,7 @@ jobs:
       - name: Build
         run: nix build
       - name: Release
-        uses: softprops/action-gh-release@v2
         if: github.ref_type == 'tag'
+        uses: softprops/action-gh-release@v2
         with:
           files: result/mahmoud_farouk-devops-sre.pdf
