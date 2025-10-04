@@ -2,17 +2,24 @@
 \usepackage[backend=biber]{biblatex}
 \addbibresource{references.bib}
 
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
 \usepackage[a4paper,left=1.5cm,right=1.5cm,top=2cm,bottom=2cm]{geometry}
 \usepackage{hyperref}
 \usepackage{enumitem}
 \usepackage{xcolor}
 \usepackage{parskip}
 \usepackage{multicol}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage[sfdefault]{inter}
+\usepackage{fontspec}
+
+\setmainfont{Alpino-Regular}[
+  BoldFont = Alpino-Bold,
+  ItalicFont = Alpino-Light,
+  BoldItalicFont = Alpino-Medium
+]
+\setsansfont{Alpino-Regular}[
+  BoldFont = Alpino-Bold,
+  ItalicFont = Alpino-Light,
+  BoldItalicFont = Alpino-Medium
+]
 
 % --- Colors ---
 \definecolor{accent}{HTML}{536878} % change if you want a different tint
