@@ -1,21 +1,21 @@
-INFO:  latexindent.pl version 3.24.5, 2025-03-13, a script to indent .tex files
-       latexindent.pl lives here: /nix/store/2laj3mfxsjqlbz6h9zvgd3i310yg626g-latexindent-3.24.5-tex/scripts/latexindent/
-       Tue Feb 24 20:40:15 2026
+INFO:  latexindent.pl version 3.24.7, 2025-08-15, a script to indent .tex files
+       latexindent.pl lives here: /nix/store/qfdffs3ll4z7cfhcrzhcp436hzknbsng-latexindent-3.24.7-tex/scripts/latexindent/
+       Thu Sep  3 12:09:03 2026
        Reading input from STDIN
 INFO:  Processing switches:
 INFO:  Directory for backup files and log file indent.log:
        .
 INFO:  Perl modules are being loaded from the following directories:
-       /nix/store/0m9dv7ml6vddmxj79s98l102d03sf9f1-perl-5.42.0/lib/perl5/5.42.0/FindBin.pm
-       /nix/store/9m0ld4f36cs7xdpginqjdrd91b4qryqa-perl-5.42.0-env/lib/perl5/site_perl/5.42.0/YAML/Tiny.pm
-       /nix/store/0m9dv7ml6vddmxj79s98l102d03sf9f1-perl-5.42.0/lib/perl5/5.42.0/File/Copy.pm
-       /nix/store/0m9dv7ml6vddmxj79s98l102d03sf9f1-perl-5.42.0/lib/perl5/5.42.0/File/Basename.pm
-       /nix/store/0m9dv7ml6vddmxj79s98l102d03sf9f1-perl-5.42.0/lib/perl5/5.42.0/Getopt/Long.pm
-       /nix/store/9m0ld4f36cs7xdpginqjdrd91b4qryqa-perl-5.42.0-env/lib/perl5/site_perl/5.42.0/File/HomeDir.pm
+       /nix/store/kfqbfq23lafkrbhxxblzf65baqz5p1ia-perl-5.42.3/lib/perl5/5.42.3/FindBin.pm
+       /nix/store/pcrz1viahlrkg1sdcvqj5ssklgfrrnn1-perl-5.42.3-env/lib/perl5/site_perl/5.42.3/YAML/Tiny.pm
+       /nix/store/kfqbfq23lafkrbhxxblzf65baqz5p1ia-perl-5.42.3/lib/perl5/5.42.3/File/Copy.pm
+       /nix/store/kfqbfq23lafkrbhxxblzf65baqz5p1ia-perl-5.42.3/lib/perl5/5.42.3/File/Basename.pm
+       /nix/store/kfqbfq23lafkrbhxxblzf65baqz5p1ia-perl-5.42.3/lib/perl5/5.42.3/Getopt/Long.pm
+       /nix/store/pcrz1viahlrkg1sdcvqj5ssklgfrrnn1-perl-5.42.3-env/lib/perl5/site_perl/5.42.3/File/HomeDir.pm
 INFO:  LatexIndent perl modules are being loaded from, for example:
-       /nix/store/2laj3mfxsjqlbz6h9zvgd3i310yg626g-latexindent-3.24.5-tex/scripts/latexindent/LatexIndent/Document.pm
+       /nix/store/qfdffs3ll4z7cfhcrzhcp436hzknbsng-latexindent-3.24.7-tex/scripts/latexindent/LatexIndent/Document.pm
 INFO:  YAML settings read: defaultSettings.yaml
-       Reading defaultSettings.yaml from /nix/store/2laj3mfxsjqlbz6h9zvgd3i310yg626g-latexindent-3.24.5-tex/scripts/latexindent/defaultSettings.yaml
+       Reading defaultSettings.yaml from /nix/store/qfdffs3ll4z7cfhcrzhcp436hzknbsng-latexindent-3.24.7-tex/scripts/latexindent/defaultSettings.yaml
 INFO:  YAML reading settings
        Home directory is /home/farouk
        latexindent.pl didn't find indentconfig.yaml or .indentconfig.yaml
