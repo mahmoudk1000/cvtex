@@ -1,6 +1,6 @@
 \documentclass[a4paper,10pt,nocolors]{article}
 
-\usepackage[margin=12mm]{geometry} % Controls margins explicitly
+\usepackage[margin=12mm]{geometry}
 \usepackage{hyperref}
 \usepackage{enumitem}
 \usepackage{xcolor}
@@ -15,7 +15,8 @@
 
 % --- Formatting ---
 \setlength{\parindent}{0pt}
-\setlist[itemize]{noitemsep, topsep=2pt}
+\pagestyle{empty}
+\setlist[itemize]{itemsep=3pt, topsep=4pt}
 
 % --- Section style ---
 \newcommand{\cvsection}[1]{%
@@ -38,7 +39,7 @@
 % ---------- Header ----------
 \begin{center}
 	{\Huge\bfseries Mahmoud Ayman Farouk Mohammed} \\[6pt]
-	{\large\textcolor{accent}{DevOps/SRE/Platform Engineer}} \\[8pt]
+	{\large\textcolor{accent}{DevOps/Platform Engineer}} \\[8pt]
 	Cairo, Egypt \\[6pt]
 
 	\href{mailto:mahmoud.a.asran@outlook.com}{mahmoud.a.asran@outlook.com}\quad \textbullet \quad
@@ -58,20 +59,20 @@ I build reliable systems and enjoy the engineering behind them. I'm a hands-on D
 % ---------- Professional Experience ----------
 \cvsection{Experience}
 
-\cventry{Jul 2024 -- Present}{DevOps / SRE Engineer}{\href{https://atos.net}{Atos}}{Cairo, Egypt}{%
-	\begin{itemize}
-		\item Automated Kubernetes cluster provisioning through the platform's infrastructure automation layer using PowerShell, Ansible, and Terraform, ensuring consistent setups and reduced operational effort.
-		\item Built and administered diverse cloud and virtualization platforms, provisioning OpenShift clusters and managing OpenStack and Proxmox environments for various customer deployments.
+\cventry{Jul 2024 -- Present}{DevOps Engineer}{\href{https://atos.net}{Atos}}{Cairo, Egypt}{%
+	\begin{itemize}[before=\linespread{1.15}\selectfont]
+		\item Automated Kubernetes cluster provisioning through the platform's infrastructure automation layer using PowerShell and Terraform, ensuring idempotent setups and reduced operational effort.
+		\item Built and administered diverse cloud and virtualization platforms, provisioning OpenShift clusters and managing OpenStack and Proxmox environments for various customer environments.
 		\item Engineered a custom Kubernetes operator from scratch to dynamically provision and autoscale Azure DevOps pipeline runners, supporting advanced customizations and workflow options.
 		\item Architected and deployed scalable AI infrastructure using LiteLLM, vLLM, and NVIDIA NIM, successfully building and delivering a fully functional LLM-as-a-Service platform.
 		\item Designed and maintained CI/CD pipelines (Azure DevOps, GitHub Actions) to accelerate safe delivery, enforce quality gates, and build PoCs to address operational challenges.
-		\item Enhanced platform observability using custom dashboards (Prometheus, Grafana), providing real-time visibility into nodes, pods, namespaces, container images, and resource usage metrics.
+		\item Enhanced platform observability (Prometheus, Grafana), providing real-time visibility.
 		\item Operated and maintained observability and monitoring stacks (ELK, EFK, Matomo), enabling real-time analytics, log collection, and system insights across production environments.
 		\item Developed custom Prometheus exporters and implemented application-level custom metrics to capture deep operational and business health indicators.
-		\item Applied core SRE practices to build highly reliable systems, defining SLIs and SLOs to measure SLA compliance, and proactively mitigating risks to optimize platform stability.
-		\item Applied strong troubleshooting skills to diagnose and resolve complex infrastructure and deployment issues, ensuring maximum system uptime.
+		\item Applied core SRE practices to build highly reliable systems, defining SLIs and SLOs.
+		\item Applied strong troubleshooting skills to diagnose and resolve complex infrastructure and deployment issues.
 		\item Acted as the primary technical liaison, representing the Atos Egypt team during multiple successful on-site client engagements in Germany.
-		\item Streamlined the project onboarding process for newcomers, accelerating their integration into active workflows and team culture.
+		\item Streamlined the project onboarding process for newcomers, accelerating their integration into active workflows and assign tasks.
 		\item Mentored interns and successfully cross-trained internal employees transitioning from other departments into the DevOps team.
 	\end{itemize}
 }
@@ -109,8 +110,8 @@ Linux \& DevOps Engineer Training \hfill Grade: Excellent
 % ---------- Certifications ----------
 \cvsection{Certifications}
 \begin{multicols}{2}
-	\begin{itemize}[left=0pt, label={}]
-		\item Cloud Engineer Associate --- Google
+	\begin{itemize}[label={}, left=0pt]
+		\item Cloud Engineer Associate --- Google \hfill Feb 2026 · Expires Feb 2029
 	\end{itemize}
 \end{multicols}
 
@@ -119,23 +120,23 @@ Linux \& DevOps Engineer Training \hfill Grade: Excellent
 \begin{multicols}{4}
 
 	\textbf{Cloud}
-	\begin{itemize}[label={-}, leftmargin=12pt, topsep=2pt]
+	\begin{itemize}[label={·}, leftmargin=12pt, topsep=2pt, itemsep=2pt]
 		\item Azure
 		\item GCP
-		\item Virtualization
+		\item OpenStack
 	\end{itemize}
 	\vspace{6pt}
 
 	\textbf{Containerization}
-	\begin{itemize}[label={-}, leftmargin=12pt, topsep=2pt]
+	\begin{itemize}[label={·}, leftmargin=12pt, topsep=2pt, itemsep=2pt]
 		\item Kubernetes
+		\item Openshift
 		\item Docker
-		\item Helm
 	\end{itemize}
 	\vspace{6pt}
 
 	\textbf{IaC}
-	\begin{itemize}[label={-}, leftmargin=12pt, topsep=2pt]
+	\begin{itemize}[label={·}, leftmargin=12pt, topsep=2pt, itemsep=2pt]
 		\item Terraform
 		\item Ansible
 		\item Nix
@@ -143,38 +144,39 @@ Linux \& DevOps Engineer Training \hfill Grade: Excellent
 	\vspace{6pt}
 
 	\textbf{CI/CD}
-	\begin{itemize}[label={-}, leftmargin=12pt, topsep=2pt]
+	\begin{itemize}[label={·}, leftmargin=12pt, topsep=2pt, itemsep=2pt]
 		\item GitHub Actions
 		\item Azure DevOps
-		\item Git
+		\item Jenkins
 	\end{itemize}
 	\vspace{6pt}
 
 	\textbf{Scripting}
-	\begin{itemize}[label={-}, leftmargin=12pt, topsep=2pt]
+	\begin{itemize}[label={·}, leftmargin=12pt, topsep=2pt, itemsep=2pt]
 		\item Bash
 		\item PowerShell
 	\end{itemize}
 	\vspace{6pt}
 
 	\textbf{Programming}
-	\begin{itemize}[label={-}, leftmargin=12pt, topsep=2pt]
+	\begin{itemize}[label={·}, leftmargin=12pt, topsep=2pt, itemsep=2pt]
 		\item Go
 		\item Python
 	\end{itemize}
 	\vspace{6pt}
 
 	\textbf{Observability}
-	\begin{itemize}[label={-}, leftmargin=12pt, topsep=2pt]
+	\begin{itemize}[label={·}, leftmargin=12pt, topsep=2pt, itemsep=2pt]
 		\item Prometheus
 		\item ELK
-		\item Loki
 	\end{itemize}
 	\vspace{6pt}
 
-	\textbf{OS}
-	\begin{itemize}[label={-}, leftmargin=12pt, topsep=2pt]
+	\textbf{Tools}
+	\begin{itemize}[label={·}, leftmargin=12pt, topsep=2pt, itemsep=2pt]
 		\item Linux
+		\item Git
+		\item Helm
 	\end{itemize}
 
 \end{multicols}
@@ -182,10 +184,10 @@ Linux \& DevOps Engineer Training \hfill Grade: Excellent
 % ---------- Languages ----------
 \cvsection{Languages}
 \begin{multicols}{3}
-	\begin{itemize}[left=0pt, label={}]
-		\item Arabic
-		\item English
-		\item German
+	\begin{itemize}[label={·},leftmargin=12pt, itemsep=2pt]
+		\item Arabic (Native)
+		\item English (Fluent)
+		\item German (Advanced)
 	\end{itemize}
 \end{multicols}
 
