@@ -1,24 +1,15 @@
-\documentclass[a4paper,10pt,nocolors]{article}
+\documentclass[a4paper,9pt,nocolors]{extarticle}
 
-\usepackage[margin=12mm]{geometry}
+\usepackage[margin=10mm]{geometry}
 \usepackage{hyperref}
 \usepackage{enumitem}
 \usepackage{xcolor}
 \usepackage{parskip}
 \usepackage{multicol}
 
-\usepackage{fontspec}
-\setmainfont{Fira Sans}[
-    UprightFont = *-Regular,
-    BoldFont = *-SemiBold,
-    ItalicFont = *-Italic,
-    BoldItalicFont = *-SemiBoldItalic
-]
-\setmonofont{Fira Code}[Scale=MatchLowercase]
-
-% Alternative standard pdfLaTeX fonts (uncomment if using standard pdflatex):
-% \usepackage[defaultsans]{lato}
-% \renewcommand{\familydefault}{\sfdefault}
+\usepackage[sfdefault]{FiraSans}
+\usepackage{FiraMono}
+\renewcommand{\familydefault}{\sfdefault}
 
 % --- Colors ---
 \definecolor{accent}{HTML}{2B5B84}
@@ -27,51 +18,53 @@
 % --- Formatting ---
 \setlength{\parindent}{0pt}
 \pagestyle{empty}
-\setlist[itemize]{itemsep=3pt, topsep=4pt}
+\setlist[itemize]{itemsep=1.5pt, topsep=2pt, parsep=0pt}
 
 % --- Section style ---
 \newcommand{\cvsection}[1]{%
-  \vspace{8pt}%
-  {\large\bfseries\textcolor{accent}{#1}}\\[-4pt]%
-  \textcolor{accent}{\rule{\linewidth}{0.6pt}}%
-  \vspace{6pt}%
+  \vspace{5pt}%
+  {\normalsize\bfseries\textcolor{accent}{#1}}\\[-5pt]%
+  \textcolor{accent}{\rule{\linewidth}{0.5pt}}%
+  \vspace{4pt}%
 }
 
 % --- Small cventry macro ---
 \newcommand{\cventry}[5]{%
-  {\textbf{#2}} \hfill {\small\textcolor{muted}{#1}}\\
-  {\small\itshape #3} \hfill {\small\textcolor{muted}{#4}}\\[-6pt]
+  {\textbf{#2}} \hfill {\footnotesize\textcolor{muted}{#1}}\\
+  {\footnotesize\itshape #3} \hfill {\footnotesize\textcolor{muted}{#4}}\\[-5pt]
   #5
-  \vspace{6pt}
+  \vspace{4pt}
 }
 
 \begin{document}
 
 % ---------- Header ----------
 \begin{center}
-	{\Huge\bfseries Mahmoud Ayman Farouk Mohammed} \\[6pt]
-	{\large\textcolor{accent}{\textbf{DevOps / Platform Engineer}}} \\[8pt]
-	Cairo, Egypt \\[6pt]
-
+	{\LARGE\bfseries Mahmoud Ayman Farouk Mohammed} \\[4pt]
+	{\normalsize\textcolor{accent}{\textbf{DevOps / Platform Engineer}}} \\[5pt]
+	{\footnotesize Cairo, Egypt} \\[4pt]
+	{\footnotesize
 	\href{mailto:mahmoud.a.asran@outlook.com}{mahmoud.a.asran@outlook.com}\quad \textbullet \quad
-	\href{tel:+201091794795}{+20 109 179 4795} \\[6pt]
-
+	\href{tel:+201091794795}{+20 109 179 4795} \\[3pt]
 	\href{https://github.com/mahmoudk1000}{GitHub}\quad \textbullet \quad
 	\href{https://www.linkedin.com/in/mahmoudk1000}{LinkedIn}\quad \textbullet \quad
 	\href{https://mahmoudk1000.github.io/}{Blog}
+	}
 \end{center}
 
-\vspace{4pt}
+\vspace{2pt}
 
 % ---------- Profile ----------
 \cvsection{Profile}
-I build reliable systems and enjoy the engineering behind them. I'm a hands-on DevOps/SRE who values automation, observability, and the craft of building well-designed services that are maintainable, testable, and pleasant to operate. I write infrastructure and runtime code --- including services and tooling in \texttt{Go} --- so I can transform ideas from prototype to production. I love solving problems, tinkering with Linux internals, designing CI/CD and operator-driven automation, and sharing improvements with the community.
+{\footnotesize
+	I build reliable systems and enjoy the engineering behind them. I'm a hands-on DevOps/SRE who values automation, observability, and the craft of building well-designed services that are maintainable, testable, and pleasant to operate. I write infrastructure and runtime code --- including services and tooling in \texttt{Go} --- so I can transform ideas from prototype to production. I love solving problems, tinkering with Linux internals, designing CI/CD and operator-driven automation, and sharing improvements with the community.
+}
 
-% ---------- Professional Experience ----------
+% ---------- Experience ----------
 \cvsection{Experience}
 
 \cventry{Jul 2024 -- Present}{DevOps Engineer}{\href{https://atos.net}{Atos}}{Cairo, Egypt}{%
-	\begin{itemize}[before=\linespread{1.15}\selectfont]
+	\begin{itemize}[before=\linespread{1.1}\selectfont]
 		\item Automated Kubernetes cluster provisioning through the platform's infrastructure automation layer using PowerShell and Terraform, ensuring idempotent setups and reduced operational effort.
 		\item Built and administered diverse cloud and virtualization platforms, provisioning OpenShift clusters and managing OpenStack and Proxmox environments for various customer environments.
 		\item Engineered a custom Kubernetes operator from scratch to dynamically provision and autoscale Azure DevOps pipeline runners, supporting advanced customizations and workflow options.
@@ -91,9 +84,9 @@ I build reliable systems and enjoy the engineering behind them. I'm a hands-on D
 % ---------- Open Source / Projects ----------
 \cvsection{Open Source / Projects}
 
-FOSS advocate and active contributor across cloud-native and tooling ecosystems (vLLM, Keel, and more - check GitHub).
+{\footnotesize FOSS advocate and active contributor across cloud-native and tooling ecosystems (vLLM, Keel, Nix, etc.).}
 
-\vspace{4pt}
+\vspace{3pt}
 \textbf{\href{https://github.com/mahmoudk1000/azdo-runner-operator}{AzDO Runner Kubernetes Operator}}\\
 \begin{itemize}
 	\item Author and maintainer of a Kubernetes operator that provisions and manages on-demand Azure DevOps self-hosted runners as CRDs.
@@ -110,79 +103,79 @@ FOSS advocate and active contributor across cloud-native and tooling ecosystems 
 % ---------- Education ----------
 \cvsection{Education}
 
-\textbf{Alexandria University} \hfill Sep 2019 -- Jun 2023\\
-B.Sc. Computer Science \hfill {\small\textcolor{muted}{Grade: Good}}
+\textbf{Alexandria University} \hfill {\footnotesize\textcolor{muted}{Sep 2019 -- Jun 2023}}\\
+{\footnotesize B.Sc. Computer Science \hfill \textcolor{muted}{Grade: Good}}
 
-\vspace{6pt}
+\vspace{4pt}
 
-\textbf{Information Technology Institute (ITI)} \hfill Jul 2022 -- Aug 2022\\
-Linux \& DevOps Engineer Training \hfill {\small\textcolor{muted}{Grade: Excellent}}
+\textbf{Information Technology Institute (ITI)} \hfill {\footnotesize\textcolor{muted}{Jul 2022 -- Aug 2022}}\\
+{\footnotesize Linux \& DevOps Engineer Training \hfill \textcolor{muted}{Grade: Excellent}}
 
 % ---------- Certifications ----------
 \cvsection{Certifications}
 
-\textbf{Associate Cloud Engineer} -- Google Cloud \hfill Feb 2026 -- Feb 2029\\
-{\small\textcolor{muted}{Credential ID / Verification link}} \hfill {\small\textcolor{muted}{Valid}}
+\textbf{Associate Cloud Engineer} -- Google Cloud \hfill {\footnotesize\textcolor{muted}{Feb 2026 -- Feb 2029}}\\
+{\footnotesize\textcolor{muted}{Credential ID / Verification link}} \hfill {\footnotesize\textcolor{muted}{Valid}}
 
 % ---------- Technical Skills ----------
 \cvsection{Technical Skills}
 \begin{multicols}{4}
 
 	\textbf{Cloud}
-	\begin{itemize}[label=\textbullet, leftmargin=12pt, topsep=2pt, itemsep=2pt]
+	\begin{itemize}[label=\textbullet, leftmargin=10pt, topsep=1pt, itemsep=1pt]
 		\item Azure
 		\item GCP
 		\item OpenStack
 	\end{itemize}
-	\vspace{6pt}
+	\vspace{4pt}
 
 	\textbf{Containerization}
-	\begin{itemize}[label=\textbullet, leftmargin=12pt, topsep=2pt, itemsep=2pt]
+	\begin{itemize}[label=\textbullet, leftmargin=10pt, topsep=1pt, itemsep=1pt]
 		\item Kubernetes
 		\item OpenShift
 		\item Docker
 	\end{itemize}
-	\vspace{6pt}
+	\vspace{4pt}
 
 	\textbf{IaC}
-	\begin{itemize}[label=\textbullet, leftmargin=12pt, topsep=2pt, itemsep=2pt]
+	\begin{itemize}[label=\textbullet, leftmargin=10pt, topsep=1pt, itemsep=1pt]
 		\item Terraform
 		\item Ansible
 		\item Nix
 	\end{itemize}
-	\vspace{6pt}
+	\vspace{4pt}
 
 	\textbf{CI/CD}
-	\begin{itemize}[label=\textbullet, leftmargin=12pt, topsep=2pt, itemsep=2pt]
+	\begin{itemize}[label=\textbullet, leftmargin=10pt, topsep=1pt, itemsep=1pt]
 		\item GitHub Actions
 		\item Azure DevOps
 		\item Jenkins
 	\end{itemize}
-	\vspace{6pt}
+	\vspace{4pt}
 
 	\textbf{Scripting}
-	\begin{itemize}[label=\textbullet, leftmargin=12pt, topsep=2pt, itemsep=2pt]
+	\begin{itemize}[label=\textbullet, leftmargin=10pt, topsep=1pt, itemsep=1pt]
 		\item Bash
 		\item PowerShell
 	\end{itemize}
-	\vspace{6pt}
+	\vspace{4pt}
 
 	\textbf{Programming}
-	\begin{itemize}[label=\textbullet, leftmargin=12pt, topsep=2pt, itemsep=2pt]
+	\begin{itemize}[label=\textbullet, leftmargin=10pt, topsep=1pt, itemsep=1pt]
 		\item Go
 		\item Python
 	\end{itemize}
-	\vspace{6pt}
+	\vspace{4pt}
 
 	\textbf{Observability}
-	\begin{itemize}[label=\textbullet, leftmargin=12pt, topsep=2pt, itemsep=2pt]
+	\begin{itemize}[label=\textbullet, leftmargin=10pt, topsep=1pt, itemsep=1pt]
 		\item Prometheus
 		\item ELK / EFK
 	\end{itemize}
-	\vspace{6pt}
+	\vspace{4pt}
 
 	\textbf{Tools}
-	\begin{itemize}[label=\textbullet, leftmargin=12pt, topsep=2pt, itemsep=2pt]
+	\begin{itemize}[label=\textbullet, leftmargin=10pt, topsep=1pt, itemsep=1pt]
 		\item Linux
 		\item Git
 		\item Helm
@@ -193,7 +186,7 @@ Linux \& DevOps Engineer Training \hfill {\small\textcolor{muted}{Grade: Excelle
 % ---------- Languages ----------
 \cvsection{Languages}
 \begin{multicols}{3}
-	\begin{itemize}[label=\textbullet, leftmargin=12pt, itemsep=2pt]
+	\begin{itemize}[label=\textbullet, leftmargin=10pt, itemsep=1pt]
 		\item Arabic (Native)
 		\item English (Fluent)
 		\item German (Advanced)
