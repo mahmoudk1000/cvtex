@@ -6,15 +6,9 @@
 \usepackage{xcolor}
 \usepackage{parskip}
 \usepackage{multicol}
-
-\usepackage{fontspec}
-\setmainfont{Fira Sans}[
-    UprightFont = *-Regular,
-    BoldFont = *-SemiBold,
-    ItalicFont = *-Italic,
-    BoldItalicFont = *-SemiBoldItalic
-]
-\setmonofont{Fira Code}[Scale=MatchLowercase]
+\usepackage[sfdefault]{FiraSans}
+\usepackage{FiraMono}
+\renewcommand{\familydefault}{\sfdefault}
 
 % Alternative standard pdfLaTeX fonts (uncomment if using standard pdflatex):
 % \usepackage[defaultsans]{lato}
