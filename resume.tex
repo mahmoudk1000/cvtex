@@ -1,11 +1,9 @@
 \documentclass[a4paper,9pt,nocolors]{extarticle}
 
 \usepackage[margin=10mm]{geometry}
-\usepackage{hyperref}
-\usepackage{enumitem}
 \usepackage{xcolor}
+\usepackage{enumitem}
 \usepackage{parskip}
-\usepackage{multicol}
 
 \usepackage[sfdefault]{FiraSans}
 \usepackage{FiraMono}
@@ -14,6 +12,16 @@
 % --- Colors ---
 \definecolor{accent}{HTML}{2B5B84}
 \definecolor{muted}{HTML}{4C566A}
+
+% -- Metadata
+\usepackage[
+    pdftex,
+    pdfauthor={Mahmoud Ayman Farouk Mohammed},
+    pdftitle={Mahmoud Ayman Farouk Mohammed - DevOps / Platform Engineer CV},
+    pdfsubject={DevOps, Site Reliability Engineering, Cloud Infrastructure, Platform Engineering Resume},
+    pdfkeywords={DevOps, SRE, Platform Engineer, Kubernetes, OpenShift, Docker, Terraform, Ansible, Nix, CI/CD, Azure DevOps, GitHub Actions, Jenkins, Azure, GCP, OpenStack, Prometheus, ELK, EFK, Go, Python, Bash, PowerShell, Helm, Linux Internals},
+    hidelinks
+]{hyperref}
 
 % --- Formatting ---
 \setlength{\parindent}{0pt}
@@ -43,6 +51,7 @@
 	{\LARGE\bfseries Mahmoud Ayman Farouk Mohammed} \\[4pt]
 	{\normalsize\textcolor{accent}{\textbf{DevOps / Platform Engineer}}} \\[5pt]
 	{\footnotesize Cairo, Egypt} \\[4pt]
+
 	{\footnotesize
 	\href{mailto:mahmoud.a.asran@outlook.com}{mahmoud.a.asran@outlook.com}\quad \textbullet \quad
 	\href{tel:+201091794795}{+20 109 179 4795} \\[3pt]
@@ -119,78 +128,93 @@
 
 % ---------- Technical Skills ----------
 \cvsection{Technical Skills}
-\begin{multicols}{4}
 
+% Row 1
+\noindent
+\begin{minipage}[t]{0.24\textwidth}
 	\textbf{Cloud}
 	\begin{itemize}[label=\textbullet, leftmargin=10pt, topsep=1pt, itemsep=1pt]
 		\item Azure
 		\item GCP
 		\item OpenStack
 	\end{itemize}
-	\vspace{4pt}
-
-	\textbf{Containerization}
-	\begin{itemize}[label=\textbullet, leftmargin=10pt, topsep=1pt, itemsep=1pt]
-		\item Kubernetes
-		\item OpenShift
-		\item Docker
-	\end{itemize}
-	\vspace{4pt}
-
+\end{minipage}\hfill
+\begin{minipage}[t]{0.24\textwidth}
 	\textbf{IaC}
 	\begin{itemize}[label=\textbullet, leftmargin=10pt, topsep=1pt, itemsep=1pt]
 		\item Terraform
 		\item Ansible
 		\item Nix
 	\end{itemize}
-	\vspace{4pt}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.24\textwidth}
+	\textbf{Scripting}
+	\begin{itemize}[label=\textbullet, leftmargin=10pt, topsep=1pt, itemsep=1pt]
+		\item Bash
+		\item PowerShell
+	\end{itemize}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.24\textwidth}
+	\textbf{Observability}
+	\begin{itemize}[label=\textbullet, leftmargin=10pt, topsep=1pt, itemsep=1pt]
+		\item Prometheus
+		\item ELK / EFK
+	\end{itemize}
+\end{minipage}
 
+\vspace{5pt}
+
+% Row 2
+\noindent
+\begin{minipage}[t]{0.24\textwidth}
+	\textbf{Containerization}
+	\begin{itemize}[label=\textbullet, leftmargin=10pt, topsep=1pt, itemsep=1pt]
+		\item Kubernetes
+		\item OpenShift
+		\item Docker
+	\end{itemize}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.24\textwidth}
 	\textbf{CI/CD}
 	\begin{itemize}[label=\textbullet, leftmargin=10pt, topsep=1pt, itemsep=1pt]
 		\item GitHub Actions
 		\item Azure DevOps
 		\item Jenkins
 	\end{itemize}
-	\vspace{4pt}
-
-	\textbf{Scripting}
-	\begin{itemize}[label=\textbullet, leftmargin=10pt, topsep=1pt, itemsep=1pt]
-		\item Bash
-		\item PowerShell
-	\end{itemize}
-	\vspace{4pt}
-
+\end{minipage}\hfill
+\begin{minipage}[t]{0.24\textwidth}
 	\textbf{Programming}
 	\begin{itemize}[label=\textbullet, leftmargin=10pt, topsep=1pt, itemsep=1pt]
 		\item Go
 		\item Python
 	\end{itemize}
-	\vspace{4pt}
-
-	\textbf{Observability}
-	\begin{itemize}[label=\textbullet, leftmargin=10pt, topsep=1pt, itemsep=1pt]
-		\item Prometheus
-		\item ELK / EFK
-	\end{itemize}
-	\vspace{4pt}
-
+\end{minipage}\hfill
+\begin{minipage}[t]{0.24\textwidth}
 	\textbf{Tools}
 	\begin{itemize}[label=\textbullet, leftmargin=10pt, topsep=1pt, itemsep=1pt]
 		\item Linux
 		\item Git
 		\item Helm
 	\end{itemize}
-
-\end{multicols}
+\end{minipage}
 
 % ---------- Languages ----------
 \cvsection{Languages}
-\begin{multicols}{3}
+\noindent
+\begin{minipage}[t]{0.32\textwidth}
 	\begin{itemize}[label=\textbullet, leftmargin=10pt, itemsep=1pt]
 		\item Arabic (Native)
+	\end{itemize}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.32\textwidth}
+	\begin{itemize}[label=\textbullet, leftmargin=10pt, itemsep=1pt]
 		\item English (Fluent)
+	\end{itemize}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.32\textwidth}
+	\begin{itemize}[label=\textbullet, leftmargin=10pt, itemsep=1pt]
 		\item German (Advanced)
 	\end{itemize}
-\end{multicols}
+\end{minipage}
 
 \end{document}
