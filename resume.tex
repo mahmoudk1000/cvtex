@@ -1,4 +1,4 @@
-\documentclass[a4paper,9pt,nocolors]{extarticle}
+\documentclass[a4paper,9pt]{extarticle}
 
 \usepackage[margin=10mm]{geometry}
 \usepackage{xcolor}
@@ -15,7 +15,6 @@
 
 % -- Metadata
 \usepackage[
-    pdftex,
     pdfauthor={Mahmoud Ayman Farouk Mohammed},
     pdftitle={Mahmoud Ayman Farouk Mohammed - DevOps / Platform Engineer CV},
     pdfsubject={DevOps, Site Reliability Engineering, Cloud Infrastructure, Platform Engineering Resume},
@@ -39,7 +38,7 @@
 % --- Small cventry macro ---
 \newcommand{\cventry}[5]{%
   {\textbf{#2}} \hfill {\footnotesize\textcolor{muted}{#1}}\\
-  {\footnotesize\itshape #3} \hfill {\footnotesize\textcolor{muted}{#4}}\\[-5pt]
+  {\footnotesize\itshape #3} \hfill {\footnotesize\textcolor{muted}{#4}}\par\vspace{-2pt}
   #5
   \vspace{4pt}
 }
