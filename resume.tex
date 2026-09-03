@@ -6,11 +6,22 @@
 \usepackage{xcolor}
 \usepackage{parskip}
 \usepackage{multicol}
-\usepackage[sfdefault]{inter}
+
 \usepackage{fontspec}
+\setmainfont{Fira Sans}[
+    UprightFont = *-Regular,
+    BoldFont = *-SemiBold,
+    ItalicFont = *-Italic,
+    BoldItalicFont = *-SemiBoldItalic
+]
+\setmonofont{Fira Code}[Scale=MatchLowercase]
+
+% Alternative standard pdfLaTeX fonts (uncomment if using standard pdflatex):
+% \usepackage[defaultsans]{lato}
+% \renewcommand{\familydefault}{\sfdefault}
 
 % --- Colors ---
-\definecolor{accent}{HTML}{536878}
+\definecolor{accent}{HTML}{2B5B84}
 \definecolor{muted}{HTML}{4C566A}
 
 % --- Formatting ---
@@ -20,13 +31,13 @@
 
 % --- Section style ---
 \newcommand{\cvsection}[1]{%
-  \vspace{6pt}%
+  \vspace{8pt}%
   {\large\bfseries\textcolor{accent}{#1}}\\[-4pt]%
   \textcolor{accent}{\rule{\linewidth}{0.6pt}}%
   \vspace{6pt}%
 }
 
-% --- Small cventry macro for the article class ---
+% --- Small cventry macro ---
 \newcommand{\cventry}[5]{%
   {\textbf{#2}} \hfill {\small\textcolor{muted}{#1}}\\
   {\small\itshape #3} \hfill {\small\textcolor{muted}{#4}}\\[-6pt]
@@ -39,7 +50,7 @@
 % ---------- Header ----------
 \begin{center}
 	{\Huge\bfseries Mahmoud Ayman Farouk Mohammed} \\[6pt]
-	{\large\textcolor{accent}{DevOps/Platform Engineer}} \\[8pt]
+	{\large\textcolor{accent}{\textbf{DevOps / Platform Engineer}}} \\[8pt]
 	Cairo, Egypt \\[6pt]
 
 	\href{mailto:mahmoud.a.asran@outlook.com}{mahmoud.a.asran@outlook.com}\quad \textbullet \quad
@@ -50,11 +61,11 @@
 	\href{https://mahmoudk1000.github.io/}{Blog}
 \end{center}
 
-\vspace{8pt}
+\vspace{4pt}
 
 % ---------- Profile ----------
 \cvsection{Profile}
-I build reliable systems and enjoy the engineering behind them. I'm a hands-on DevOps/SRE who values automation, observability, and the craft of building well-designed services that are maintainable, testable and pleasant to operate. I write infrastructure and runtime code --- including services and tooling in \texttt{Go} --- so I can transform ideas from prototype to production. I love solving problems, tinkering with Linux internals, designing CI/CD and operator-driven automation, and sharing improvements with the community. I also design processes that help teams deliver value consistently and sustainably. I bring effort and attention to detail, shipping work that I trust, want to run, and can maintain with confidence.
+I build reliable systems and enjoy the engineering behind them. I'm a hands-on DevOps/SRE who values automation, observability, and the craft of building well-designed services that are maintainable, testable, and pleasant to operate. I write infrastructure and runtime code --- including services and tooling in \texttt{Go} --- so I can transform ideas from prototype to production. I love solving problems, tinkering with Linux internals, designing CI/CD and operator-driven automation, and sharing improvements with the community.
 
 % ---------- Professional Experience ----------
 \cvsection{Experience}
@@ -67,21 +78,22 @@ I build reliable systems and enjoy the engineering behind them. I'm a hands-on D
 		\item Architected and deployed scalable AI infrastructure using LiteLLM, vLLM, and NVIDIA NIM, successfully building and delivering a fully functional LLM-as-a-Service platform.
 		\item Designed and maintained CI/CD pipelines (Azure DevOps, GitHub Actions) to accelerate safe delivery, enforce quality gates, and build PoCs to address operational challenges.
 		\item Enhanced platform observability (Prometheus, Grafana), providing real-time visibility.
-		\item Operated and maintained observability and monitoring stacks (ELK, EFK, Matomo), enabling real-time analytics, log collection, and system insights across production environments.
+		\item Operated and maintained observability stacks (ELK, EFK, Matomo), enabling real-time analytics, log collection, and system insights across production environments.
 		\item Developed custom Prometheus exporters and implemented application-level custom metrics to capture deep operational and business health indicators.
 		\item Applied core SRE practices to build highly reliable systems, defining SLIs and SLOs.
 		\item Applied strong troubleshooting skills to diagnose and resolve complex infrastructure and deployment issues.
 		\item Acted as the primary technical liaison, representing the Atos Egypt team during multiple successful on-site client engagements in Germany.
-		\item Streamlined the project onboarding process for newcomers, accelerating their integration into active workflows and assign tasks.
-		\item Mentored interns and successfully cross-trained internal employees transitioning from other departments into the DevOps team.
+		\item Streamlined project onboarding for newcomers, accelerating integration into active workflows.
+		\item Mentored interns and successfully cross-trained internal employees transitioning into the DevOps team.
 	\end{itemize}
 }
 
 % ---------- Open Source / Projects ----------
 \cvsection{Open Source / Projects}
 
-FOSS advocate and active contributor across cloud-native and tooling ecosystems (vLLM, Keel, Nix, etc.).
+FOSS advocate and active contributor across cloud-native and tooling ecosystems (vLLM, Keel, and more - check GitHub).
 
+\vspace{4pt}
 \textbf{\href{https://github.com/mahmoudk1000/azdo-runner-operator}{AzDO Runner Kubernetes Operator}}\\
 \begin{itemize}
 	\item Author and maintainer of a Kubernetes operator that provisions and manages on-demand Azure DevOps self-hosted runners as CRDs.
@@ -99,28 +111,25 @@ FOSS advocate and active contributor across cloud-native and tooling ecosystems 
 \cvsection{Education}
 
 \textbf{Alexandria University} \hfill Sep 2019 -- Jun 2023\\
-B.Sc. Computer Science \hfill Grade: Good
+B.Sc. Computer Science \hfill {\small\textcolor{muted}{Grade: Good}}
 
 \vspace{6pt}
 
 \textbf{Information Technology Institute (ITI)} \hfill Jul 2022 -- Aug 2022\\
-Linux \& DevOps Engineer Training \hfill Grade: Excellent
-
+Linux \& DevOps Engineer Training \hfill {\small\textcolor{muted}{Grade: Excellent}}
 
 % ---------- Certifications ----------
 \cvsection{Certifications}
-\begin{multicols}{2}
-	\begin{itemize}[label={}, left=0pt]
-		\item Cloud Engineer Associate --- Google \hfill Feb 2026 · Expires Feb 2029
-	\end{itemize}
-\end{multicols}
+
+\textbf{Associate Cloud Engineer} -- Google Cloud \hfill Feb 2026 -- Feb 2029\\
+{\small\textcolor{muted}{Credential ID / Verification link}} \hfill {\small\textcolor{muted}{Valid}}
 
 % ---------- Technical Skills ----------
 \cvsection{Technical Skills}
 \begin{multicols}{4}
 
 	\textbf{Cloud}
-	\begin{itemize}[label={·}, leftmargin=12pt, topsep=2pt, itemsep=2pt]
+	\begin{itemize}[label=\textbullet, leftmargin=12pt, topsep=2pt, itemsep=2pt]
 		\item Azure
 		\item GCP
 		\item OpenStack
@@ -128,15 +137,15 @@ Linux \& DevOps Engineer Training \hfill Grade: Excellent
 	\vspace{6pt}
 
 	\textbf{Containerization}
-	\begin{itemize}[label={·}, leftmargin=12pt, topsep=2pt, itemsep=2pt]
+	\begin{itemize}[label=\textbullet, leftmargin=12pt, topsep=2pt, itemsep=2pt]
 		\item Kubernetes
-		\item Openshift
+		\item OpenShift
 		\item Docker
 	\end{itemize}
 	\vspace{6pt}
 
 	\textbf{IaC}
-	\begin{itemize}[label={·}, leftmargin=12pt, topsep=2pt, itemsep=2pt]
+	\begin{itemize}[label=\textbullet, leftmargin=12pt, topsep=2pt, itemsep=2pt]
 		\item Terraform
 		\item Ansible
 		\item Nix
@@ -144,7 +153,7 @@ Linux \& DevOps Engineer Training \hfill Grade: Excellent
 	\vspace{6pt}
 
 	\textbf{CI/CD}
-	\begin{itemize}[label={·}, leftmargin=12pt, topsep=2pt, itemsep=2pt]
+	\begin{itemize}[label=\textbullet, leftmargin=12pt, topsep=2pt, itemsep=2pt]
 		\item GitHub Actions
 		\item Azure DevOps
 		\item Jenkins
@@ -152,28 +161,28 @@ Linux \& DevOps Engineer Training \hfill Grade: Excellent
 	\vspace{6pt}
 
 	\textbf{Scripting}
-	\begin{itemize}[label={·}, leftmargin=12pt, topsep=2pt, itemsep=2pt]
+	\begin{itemize}[label=\textbullet, leftmargin=12pt, topsep=2pt, itemsep=2pt]
 		\item Bash
 		\item PowerShell
 	\end{itemize}
 	\vspace{6pt}
 
 	\textbf{Programming}
-	\begin{itemize}[label={·}, leftmargin=12pt, topsep=2pt, itemsep=2pt]
+	\begin{itemize}[label=\textbullet, leftmargin=12pt, topsep=2pt, itemsep=2pt]
 		\item Go
 		\item Python
 	\end{itemize}
 	\vspace{6pt}
 
 	\textbf{Observability}
-	\begin{itemize}[label={·}, leftmargin=12pt, topsep=2pt, itemsep=2pt]
+	\begin{itemize}[label=\textbullet, leftmargin=12pt, topsep=2pt, itemsep=2pt]
 		\item Prometheus
-		\item ELK
+		\item ELK / EFK
 	\end{itemize}
 	\vspace{6pt}
 
 	\textbf{Tools}
-	\begin{itemize}[label={·}, leftmargin=12pt, topsep=2pt, itemsep=2pt]
+	\begin{itemize}[label=\textbullet, leftmargin=12pt, topsep=2pt, itemsep=2pt]
 		\item Linux
 		\item Git
 		\item Helm
@@ -184,7 +193,7 @@ Linux \& DevOps Engineer Training \hfill Grade: Excellent
 % ---------- Languages ----------
 \cvsection{Languages}
 \begin{multicols}{3}
-	\begin{itemize}[label={·},leftmargin=12pt, itemsep=2pt]
+	\begin{itemize}[label=\textbullet, leftmargin=12pt, itemsep=2pt]
 		\item Arabic (Native)
 		\item English (Fluent)
 		\item German (Advanced)
