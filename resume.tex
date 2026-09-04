@@ -48,7 +48,7 @@
 % ---------- Header ----------
 \begin{center}
 	{\LARGE\bfseries Mahmoud Ayman Farouk Mohammed} \\[4pt]
-	{\normalsize\textcolor{accent}{\textbf{DevOps / Platform Engineer}}} \\[5pt]
+	{\normalsize\textcolor{accent}{\textbf{DevOps / Platform Engineer}}} \\[6pt]
 	{\footnotesize Cairo, Egypt} \\[4pt]
 
 	{\footnotesize
@@ -65,27 +65,22 @@
 % ---------- Profile ----------
 \cvsection{Profile}
 {\footnotesize
-	I build reliable systems and enjoy the engineering behind them. I'm a hands-on DevOps/SRE who values automation, observability, and the craft of building well-designed services that are maintainable, testable, and pleasant to operate. I write infrastructure and runtime code --- including services and tooling in \texttt{Go} --- so I can transform ideas from prototype to production. I love solving problems, tinkering with Linux internals, designing CI/CD and operator-driven automation, and sharing improvements with the community.
+	I build reliable systems and enjoy the engineering behind them. I'm a hands-on DevOps/Platform who values automation, reliability, and the craft of building well-designed services that are maintainable and pleasant to operate. I write infrastructure and runtime code --- including services and tooling in \texttt{Go} --- so I can transform ideas from prototype to production. I love solving problems, tinkering with Linux internals, designing CI/CD and operator-driven automation, and sharing improvements with the community.
 }
 
 % ---------- Experience ----------
 \cvsection{Experience}
 
 \cventry{Jul 2024 -- Present}{DevOps Engineer}{\href{https://atos.net}{Atos}}{Cairo, Egypt}{%
-	\begin{itemize}[before=\linespread{1.1}\selectfont]
-		\item Automated Kubernetes cluster provisioning through the platform's infrastructure automation layer using PowerShell and Terraform, ensuring idempotent setups and reduced operational effort.
-		\item Built and administered diverse cloud and virtualization platforms, provisioning OpenShift clusters and managing OpenStack and Proxmox environments for various customer environments.
-		\item Engineered a custom Kubernetes operator from scratch to dynamically provision and autoscale Azure DevOps pipeline runners, supporting advanced customizations and workflow options.
-		\item Architected and deployed scalable AI infrastructure using LiteLLM, vLLM, and NVIDIA NIM, successfully building and delivering a fully functional LLM-as-a-Service platform.
-		\item Designed and maintained CI/CD pipelines (Azure DevOps, GitHub Actions) to accelerate safe delivery, enforce quality gates, and build PoCs to address operational challenges.
-		\item Enhanced platform observability (Prometheus, Grafana), providing real-time visibility.
-		\item Operated and maintained observability stacks (ELK, EFK, Matomo), enabling real-time analytics, log collection, and system insights across production environments.
-		\item Developed custom Prometheus exporters and implemented application-level custom metrics to capture deep operational and business health indicators.
-		\item Applied core SRE practices to build highly reliable systems, defining SLIs and SLOs.
-		\item Applied strong troubleshooting skills to diagnose and resolve complex infrastructure and deployment issues.
-		\item Acted as the primary technical liaison, representing the Atos Egypt team during multiple successful on-site client engagements in Germany.
-		\item Streamlined project onboarding for newcomers, accelerating integration into active workflows.
-		\item Mentored interns and successfully cross-trained internal employees transitioning into the DevOps team.
+	\begin{itemize}[before=\linespread{1.2}\selectfont]
+		\item Automated Kubernetes cluster provisioning and managing via the infrastructure layer using PowerShell and Bash, ensuring idempotent setups and reducing manual toil%.
+		\item Built and administered diverse cloud environments with Terraform, provisioning OpenShift clusters and managing OpenStack and Proxmox infrastructures scaling for multiple enterprise customers.
+		\item Designed, implemented, and successfully open-sourced a custom Kubernetes operator in Go to dynamically provision and autoscale Azure DevOps pipeline runners, eliminating CI/CD bottlenecks.
+		\item Designed and built an LLM-as-a-Service utilizing LiteLLM, vLLM, and NVIDIA NIM, delivering a highly scalable AI infrastructure serving over 1.3M requests.
+		\item Operated and enhanced observability stacks (Prometheus, Grafana, ELK, EFK, Matomo) to provide real-time production analytics.
+		\item Developed custom Prometheus exporters in Go and defined formal SLIs/SLOs to capture deep operational health indicators and drive core SRE practices.
+		\item Served as the primary technical liaison for Atos Egypt during on-site engagements in Germany, building client trust and translating complex infrastructure requirements into actionable deliverables.
+		\item Mentored interns and cross-trained transitioning engineers by standardizing onboarding workflows, accelerating their integration into project.
 	\end{itemize}
 }
 
@@ -97,15 +92,14 @@
 \vspace{3pt}
 \textbf{\href{https://github.com/mahmoudk1000/azdo-runner-operator}{AzDO Runner Kubernetes Operator}}\\
 \begin{itemize}
-	\item Author and maintainer of a Kubernetes operator that provisions and manages on-demand Azure DevOps self-hosted runners as CRDs.
+	\item Author and maintainer of the open-source Kubernetes operator (originally developed to solve internal scale challenges) that manages on-demand Azure DevOps self-hosted runners as CRDs.
 	\item Focus areas: lifecycle safety (admission/mutating/validating webhooks), secure PAT handling, PVC-backed workspaces, and autoscaling runner fleets.
-	\item Built Helm charts and CI/CD pipelines for production-grade use.
 \end{itemize}
 
 \textbf{\href{https://nixos.org}{Nix \& Nixpkgs}}\\
 \begin{itemize}
-	\item Long-term reviewer and maintainer in the Nixpkgs ecosystem: package updates, module contributions, reproducibility fixes, and maintainership entries.
-	\item Contributed a large number of PRs across packages and modules.
+	\item Long-term reviewer and maintainer and a member in the Nixpkgs ecosystem and org: package updates, module contributions, reproducibility fixes, and maintainership entries.
+	\item Contributed 40+ PRs across various packages and modules, ensuring ecosystem stability and up-to-date dependencies.
 \end{itemize}
 
 % ---------- Education ----------
