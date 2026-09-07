@@ -1,10 +1,13 @@
 ---
 name: Release
-on: push
+on:
+  push:
+    tags:
+      - '*'
 permissions:
   contents: write
 jobs:
-  build:
+  release:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -16,7 +19,6 @@ jobs:
       - name: Build
         run: nix build
       - name: Release
-        if: github.ref_type == 'tag'
         uses: softprops/action-gh-release@v2
         with:
-          files: result/mahmoud_farouk-devops-sre.pdf
+          files: result/mahmoud_farouk-devops.pdf
