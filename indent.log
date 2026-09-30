@@ -1,17 +1,17 @@
 INFO:  latexindent.pl version 3.24.7, 2025-08-15, a script to indent .tex files
        latexindent.pl lives here: /nix/store/qfdffs3ll4z7cfhcrzhcp436hzknbsng-latexindent-3.24.7-tex/scripts/latexindent/
-       Mon Sep  7 16:57:02 2026
+       Wed Sep 30 15:00:54 2026
        Reading input from STDIN
 INFO:  Processing switches:
 INFO:  Directory for backup files and log file indent.log:
        .
 INFO:  Perl modules are being loaded from the following directories:
-       /nix/store/kfqbfq23lafkrbhxxblzf65baqz5p1ia-perl-5.42.3/lib/perl5/5.42.3/FindBin.pm
-       /nix/store/pcrz1viahlrkg1sdcvqj5ssklgfrrnn1-perl-5.42.3-env/lib/perl5/site_perl/5.42.3/YAML/Tiny.pm
-       /nix/store/kfqbfq23lafkrbhxxblzf65baqz5p1ia-perl-5.42.3/lib/perl5/5.42.3/File/Copy.pm
-       /nix/store/kfqbfq23lafkrbhxxblzf65baqz5p1ia-perl-5.42.3/lib/perl5/5.42.3/File/Basename.pm
-       /nix/store/kfqbfq23lafkrbhxxblzf65baqz5p1ia-perl-5.42.3/lib/perl5/5.42.3/Getopt/Long.pm
-       /nix/store/pcrz1viahlrkg1sdcvqj5ssklgfrrnn1-perl-5.42.3-env/lib/perl5/site_perl/5.42.3/File/HomeDir.pm
+       /nix/store/w03i01kiakf4wz7jbp1l59c0bhb3pjca-perl-5.42.3/lib/perl5/5.42.3/FindBin.pm
+       /nix/store/sl14rcvpggqfv66pr2lmwqi59kc6g5xn-perl-5.42.3-env/lib/perl5/site_perl/5.42.3/YAML/Tiny.pm
+       /nix/store/w03i01kiakf4wz7jbp1l59c0bhb3pjca-perl-5.42.3/lib/perl5/5.42.3/File/Copy.pm
+       /nix/store/w03i01kiakf4wz7jbp1l59c0bhb3pjca-perl-5.42.3/lib/perl5/5.42.3/File/Basename.pm
+       /nix/store/w03i01kiakf4wz7jbp1l59c0bhb3pjca-perl-5.42.3/lib/perl5/5.42.3/Getopt/Long.pm
+       /nix/store/sl14rcvpggqfv66pr2lmwqi59kc6g5xn-perl-5.42.3-env/lib/perl5/site_perl/5.42.3/File/HomeDir.pm
 INFO:  LatexIndent perl modules are being loaded from, for example:
        /nix/store/qfdffs3ll4z7cfhcrzhcp436hzknbsng-latexindent-3.24.7-tex/scripts/latexindent/LatexIndent/Document.pm
 INFO:  YAML settings read: defaultSettings.yaml
