@@ -55,10 +55,12 @@
               mkdir -p .cache/latex
 
               latexmk -interaction=nonstopmode -auxdir=.cache/latex -xelatex resume.tex
+              latexmk -interaction=nonstopmode -auxdir=.cache/latex -xelatex resume_eu.tex
             '';
             installPhase = ''
               mkdir -p $out
               cp resume.pdf $out/mahmoud_farouk-devops.pdf
+              cp resume_eu.pdf $out/mahmoud_farouk-devops-eu.pdf
             '';
           };
         }

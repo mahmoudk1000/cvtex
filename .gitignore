@@ -2,25 +2,33 @@
 result
 result-*
 
-# LaTeX auxiliary files
+# Core LaTeX auxiliary files
 *.aux
-*.fdb_latexmk
-*.fls
+*.bbl
+*.bcf
+*.blg
+*.idx
+*.ind
+*.ilg
+*.inq
+*.ist
 *.log
 *.out
-*.synctex.gz
-*.toc
-*.bbl
-*.blg
-*.bcf
 *.run.xml
-*.nav
-*.snm
-*.vrb
-*.xcp
+*.toc
+*.lof
+*.lot
 
-# LaTeX cache directory
-.cache/
+# XeLaTeX specific temporary files
+*.xdv
+
+# Latexmk specific files
+*.fdb_latexmk
+*.fls
+
+# SyncTeX files
+*.synctex.gz
+*.synctex(busy)
 
 # OS generated files
 .DS_Store
@@ -31,19 +39,4 @@ result-*
 ehthumbs.db
 Thumbs.db
 
-# Editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# Temporary files
-*.tmp
-*.temp
-
-# PDF files (only if you don't want to track them in git)
-# *.pdf
-
-# Node.js (if using any JS tools)
-node_modules/
+ *.pdf
