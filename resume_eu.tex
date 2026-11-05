@@ -60,7 +60,7 @@
 \newcommand{\cvevent}[3]{
     \vspace*{1ex}
     % Solid white dot, precisely centered on the 1pt timeline border
-    \noindent\makebox[0pt][l]{\hspace*{-14.45pt}\makebox[0pt][c]{\tikz\filldraw[textwhite] (0,0) circle (2.5pt);}}%
+    \noindent\makebox[0pt][l]{\hspace*{-14.75pt}\makebox[0pt][c]{\tikz\filldraw[textwhite] (0,0) circle (2.5pt);}}%
     {\large\bfseries\textcolor{textwhite}{\uppercase{#1}}}\par\vspace{0.5ex}
     {\small\textcolor{textlight}{#2}}\par\vspace{1ex}
     {\small\textcolor{textlight}{#3}}\par\vspace{3ex}
@@ -175,15 +175,17 @@
 	\staritem{4}{Nix / Nixpkgs}
 	\staritem{4}{Ansible}
 	\staritem{4}{Prometheus / ELK}
-	\staritem{4}{Python / Bash}
 
 	\cvsectionleft{Skills}
 	\skillgroup{5}{Cloud}{Azure, GCP, AWS, OpenStack}
 	\skillgroup{5}{Containerization}{Kubernetes, OpenShift, Docker}
 	\skillgroup{5}{IaC}{Terraform, Ansible, Nix}
-	\skillgroup{5}{CI/CD}{GitHub Actions, Azure DevOps, Jenkins}
+	\skillgroup{5}{CI/CD \& GitOps}{GitHub Actions, Az DevOps, Jenkins, ArgoCD}
 	\skillgroup{4}{Observability}{Prometheus, ELK, EFK}
-	\skillgroup{4}{Programming}{Go, Python, Bash, PowerShell}
+	\skillgroup{4}{Programming}{Go, Python}
+	\skillgroup{4}{Scripting}{Bash, PowerShell}
+	\skillgroup{4}{Tools}{Linux, Git, Helm}
+	\skillgroup{4}{DevSecOps}{SAST, DAST, Image Scanning}
 
 	\cvsectionleft{Strengths}
 	{\small
@@ -205,51 +207,60 @@
 
 		\cvevent{Senior DevOps Engineer}{Atos \textbar{} Cairo, Egypt \textbar{} 09/2026 -- Present}{
 			\begin{itemize}
-				\item Lead the Kubernetes platform team, managing cluster lifecycle operations, defining architectural direction, and delegating implementation tasks to cross-functional engineers.
-				\item Led Atos graduate project sponsorship as technical mentor, guiding interns and training transitioning engineers through onboarding technical courses and workflows.
-				\item Designed, implemented, and open-sourced a Kubernetes operator to dynamically set up and scale Azure DevOps pipeline runners, removing CI/CD bottlenecks.
-				\item Designed AI-infrastructure and built an LLM-as-a-Service using LiteLLM, vLLM, and NVIDIA NIM, delivering a scalable AI infrastructure serving over 1.3M requests.
+				\item Assumed leadership of the Kubernetes team, directing cluster lifecycle operations, architectural strategy, and technical mentoring for transitioning engineers.
+				\item Serve as a technical mentor for internal employees and lead university-sponsored graduate projects, guiding interns and training transitioning engineers through onboarding workflows.
+				\item Architected and advanced a standardized GitOps and CI/CD ecosystem (Azure DevOps, GitHub Actions, Argo CD) integrated deeply with IaC and DevSecOps practices (SAST, DAST, image scanning).
+				\item Designed AI-infrastructure and built an LLM-as-a-Service using LiteLLM, vLLM, and NVIDIA NIM on GPU-backed Kubernetes clusters, delivering a scalable platform serving over 1.3M requests.
+				\item Designed robust Disaster Recovery (DR) strategies tailored for multi-cluster Kubernetes environments and automated setups using Velero, Barman and custom automation.
 			\end{itemize}
 		}
 
 		\cvevent{DevOps Engineer}{Atos \textbar{} Cairo, Egypt \textbar{} 07/2024 -- 08/2026}{
 			\begin{itemize}
-				\item Owned the Azure environment end-to-end, taking full responsibility for all cloud infrastructure.
-				\item Selected as the sole engineer requested by the German branch for two separate three-month on-sites in Germany, building team and client trust to deliver critical projects.
-				\item Administered and maintained local and cloud-based Kubernetes clusters, ensuring high availability and optimal performance for ongoing workloads.
-				\item Built and administered diverse cloud environments with Terraform, setting up OpenShift clusters and managing OpenStack and Proxmox infrastructures, scaling for multiple enterprise customers.
-				\item Automated Kubernetes cluster setup and management using PowerShell and Bash, ensuring repeatable setups and reducing manual work.
-				\item Operated and improved monitoring tools (Prometheus, Grafana, ELK, EFK) to provide real-time production analytics.
-				\item Developed custom Prometheus exporters that enabled white-box monitoring, leading to formal SLIs and SLOs to capture operational indicators and drive core reliability practices.
+				\item Owned the Azure environment end-to-end and co-engineered the ACP Cloud Platform, scaling highly available OpenShift, Kubernetes, OpenStack, and Proxmox infrastructures with Terraform.
+				\item Selected as the sole engineer requested by the German branch for two separate three-month on-site engagements in Germany, building team and client trust to deliver critical hybrid-cloud projects.
+				\item Developed a custom Kubernetes operator (initially in C\#, rewritten in Go as KARA) to dynamically autoscale on-demand Azure DevOps runners, eliminating CI/CD bottlenecks.
+				\item Modernized legacy CI/CD pipelines and infrastructure on Azure, refactoring obsolete services and defining department-wide reusable pipeline templates.
+				\item Operated observability stacks (Prometheus, Grafana, ELK, EFK) and built a custom Prometheus exporter for a critical application, enabling precise SLI monitoring that directly led to achieving target SLOs.
+				\item Engineered a custom Prometheus exporter for an enterprise application, enabling precise SLI monitoring and ensuring SLO compliance.
 			\end{itemize}
 		}
 
-		\cvsectionright{Projects \& Open Source}
+		\cvsectionright{Projects}
 
-		\cvevent{ACP Cloud Platform}{Infrastructure \& Deployment Automation}{
-			Automated diverse cloud environments using Terraform, establishing highly-available OpenShift clusters and managing complex OpenStack infrastructures tailored for enterprise scale and reliability.
+		\cvevent{ACP Cloud Platform}{
+			Development and integration of a comprehensive automation layer into the existing enterprise cloud platform for AWS, Azure, GCP, and OpenStack. Automation of compute, storage, networking, and PaaS services, as well as integration with existing business processes to enable the standardized provisioning of cloud resources.
 		}
 
-		\cvevent{LFP (League de Football)}{Cloud Infrastructure \& CI/CD}{
-			Engineered deployment pipelines, infrastructure automation, and robust hosting environments to support the League de Football platform, ensuring high uptime and performance during peak traffic.
+		\cvevent{LFP (League de Football)}{
+			Development and integration of DevOps and cloud infrastructure solutions, focusing on infrastructure automation, CI/CD pipelines, and Infrastructure as Code (IaC). Automation of deployment processes, configuration management, and monitoring to ensure scalable, reliable, and efficient platform operations.
 		}
 
-		\cvevent{MCIT (Digital Identity)}{Infrastructure Provisioning}{
-			Designed and deployed foundational infrastructure and automated CI/CD workflows for the Ministry's Digital Identity initiative, ensuring secure and resilient service operations.
+		\cvevent{MCIT (Digital Identity)}{
+			Development and integration of DevOps and cloud infrastructure solutions for Egypt’s Unified Digital Identity platform, focusing on infrastructure automation, CI/CD pipelines infra. Automation of deployment processes, configuration management, and infrastructure monitoring to ensure scalable, secure, and reliable platform operations, supporting the delivery and management of digital identity services.
 		}
 
-		\cvevent{Nix \& Nixpkgs}{Open Source Contributor \& Maintainer}{
-			Long-term reviewer and maintainer in the Nixpkgs ecosystem. Contributed 40+ PRs across various packages and modules, ensuring ecosystem stability, reproducibility fixes, and up-to-date dependencies.
+		\cvsectionright{Hobby Projects \& Open Source}
+
+		\cvevent{Felukka (felukka.org)}{Author \& Maintainer}{
+			Creator of the Felukka open-source ecosystem, focusing on cloud-native tooling and modernizing workflows for Kubernetes environments.
+			\vspace{1ex}
+			\begin{itemize}
+				\item \textbf{Koptan:} An autonomous autopilot and next-generation management platform for deploying and managing Kubernetes clusters, built with Go and Backstage.
+				\item \textbf{KARA:} The first-ever Azure DevOps runner autoscaler operator for Kubernetes, featuring smart capability-based provisioning and lifecycle safety.
+				\item \textbf{Bosla:} A highly-featured Go CLI tool scoped for advanced semantic versioning, release management, and deployment tracking.
+			\end{itemize}
 		}
 
-		\cvsectionright{Hobby Projects}
-
-		\cvevent{Felukka (Koptan and Bosla)}{Author \& Maintainer}{
-			Developed and maintained open-source tooling centered around the Felukka ecosystem (including Koptan and Bosla). Focused on modernizing workflows and providing extensible tools for the community.
+		\cvevent{FOSS Egypt (github.com/FOSS-Egypt)}{Founding Member}{
+			Co-founded the Free and Open Source Software (FOSS) Egypt community to foster collaboration, knowledge sharing, and open-source advocacy in the region.
 		}
 
-		\cvevent{KARA (Kubernetes Azure-DevOps Runner Autoscaler)}{Author \textbar{} Go, Kubernetes}{
-			Authored an open-source Kubernetes operator to manage on-demand Azure DevOps self-hosted runners as CRDs. Features include lifecycle safety via webhooks, secure PAT handling, and PVC-backed workspaces.
+		\cvevent{NixOS, vLLM, \& Keel}{Contributor \& Maintainer}{
+			\begin{itemize}
+				\item \textbf{Nix/Nixpkgs:} Long-term reviewer and maintainer. Contributed 40+ PRs focusing on ecosystem stability, package updates, and reproducibility.
+				\item \textbf{vLLM \& Keel:} Active contributor providing bug fixes, enhancements, and operational insights to high-impact cloud-native and AI infrastructure projects.
+			\end{itemize}
 		}
 
 	\end{tcolorbox}

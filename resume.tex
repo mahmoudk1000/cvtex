@@ -21,6 +21,7 @@
     pdfkeywords={DevOps, SRE, Platform Engineer, Kubernetes, OpenShift, Docker, Terraform, Ansible, Nix, CI/CD, Azure DevOps, GitHub Actions, Jenkins, Azure, GCP, OpenStack, Prometheus, ELK, EFK, Go, Python, Bash, PowerShell, Helm, Linux Internals},
     hidelinks
 ]{hyperref}
+\usepackage{bookmark}
 
 % --- Formatting ---
 \setlength{\parindent}{0pt}
@@ -76,23 +77,22 @@
 {\textbf{Senior DevOps Engineer}} \hfill {\footnotesize\textcolor{muted}{Sep 2026 -- Present}}\par\vspace{-2pt}
 \begin{itemize}[before=\linespread{1.2}\selectfont]
 	\item Lead the Kubernetes platform team, managing cluster lifecycle operations, defining architectural direction, and delegating implementation tasks to cross-functional engineers.
-	\item Managed Kubernetes lifecycle operations, planning project requirements and delegating implementation tasks to cross-functional engineers.
-	\item Led Atos graduate project sponsorship as technical mentor, guiding interns and training transitioning engineers through onboarding technical courses and workflows.
-	\item Designed, implemented, and open-sourced a Kubernetes operator to dynamically set up and scale Azure DevOps pipeline runners, removing CI/CD bottlenecks.
-	\item Designed AI-infrastructure and built an LLM-as-a-Service using LiteLLM, vLLM, and NVIDIA NIM, delivering a scalable AI infrastructure serving over 1.3M requests.
+	\item Designed robust Disaster Recovery (DR) strategies tailored for multi-cluster Kubernetes environments and automated setups using Velero, Barman and custom automation.
+	\item Serve as a technical mentor for internal employees and lead university-sponsored graduate projects, guiding interns and training transitioning engineers through onboarding workflows.
+	\item Architected and standardized CI/CD flow (Azure DevOps, GitHub Actions) integrated deeply DevSecOps practices and covering the security.
+	\item Operate AI-infrastructure and built an LLM-as-a-Service using LiteLLM, vLLM, and NVIDIA NIM on GPU-backed Kubernetes clusters, delivering a scalable platform serving over 1.4M requests monthly.
 \end{itemize}
 \vspace{4pt}
 
 {\textbf{DevOps Engineer}} \hfill {\footnotesize\textcolor{muted}{Jul 2024 -- Aug 2026}}\par\vspace{-2pt}
 \begin{itemize}[before=\linespread{1.2}\selectfont]
-	\item Own the Azure environment end-to-end, taking full responsibility for all cloud infrastructure.
-	\item Selected as the sole engineer requested by the German branch for two separate three-month on-sites in Germany, building team and client trust to deliver critical projects.
-	\item Administered and maintained local and cloud-based Kubernetes clusters, ensuring high availability and optimal performance for ongoing workloads.
-	\item Built and administered diverse cloud environments with Terraform, setting up OpenShift clusters and managing OpenStack and Proxmox infrastructures, scaling for multiple enterprise customers.
-	\item Automated Kubernetes cluster setup and management using PowerShell and Bash, ensuring repeatable setups and reducing manual work.
-	\item Operated and improved monitoring tools (Prometheus, Grafana, ELK, EFK, Matomo) to provide real-time production analytics.
-	\item Designed, implemented, and successfully open-sourced a custom Kubernetes operator in Go to dynamically set up and scale Azure DevOps pipeline runners, removing CI/CD bottlenecks.
-	\item Developed custom Prometheus exporters that enabled white-box monitoring, leading to formal SLIs and SLOs to capture operational indicators and drive core reliability practices.
+	\item Modernized a legacy architecture into a cloud-native environment using Helm, packaging complex dependencies including highly available, replicated HA instances of MongoDB, Redis, and MSSQL into robust custom charts for seamless Swan deployment.
+	\item Administrate the Azure environment, scaling highly available OpenShift, Kubernetes, OpenStack, and Proxmox infrastructures with IaC (is most cases).
+	\item Selected as the sole engineer requested by the German branch for two separate on-site engagements in Germany, building client trust for better deliver.
+	\item Developed a custom Kubernetes operator (initially in C\#, rewritten in Go as KARA) to dynamically autoscale on-demand Azure DevOps runners, eliminating CI/CD bottlenecks.
+	\item Modernized legacy CI/CD pipelines and infrastructure on Azure, refactoring obsolete services and defining department-wide reusable pipeline templates.
+	\item Operated observability stacks (Prometheus, Grafana, ELK, EFK) and developed custom Prometheus exporters for white-box monitoring, driving core reliability practices through formal SLIs and SLOs.
+	\item Engineered a custom Prometheus exporter for an enterprise application, enabling precise SLI monitoring and ensuring SLO compliance.
 \end{itemize}
 \vspace{4pt}
 
