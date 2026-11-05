@@ -56,7 +56,7 @@
     \color{textlight}
 }
 
-% Timeline Event
+% Timeline Event (Requires exactly 3 arguments: {#1 Title} {#2 Subtitle} {#3 Description})
 \newcommand{\cvevent}[3]{
     \vspace*{1ex}
     % Solid white dot, precisely centered on the 1pt timeline border
@@ -221,22 +221,21 @@
 				\item Selected as the sole engineer requested by the German branch for two separate three-month on-site engagements in Germany, building team and client trust to deliver critical hybrid-cloud projects.
 				\item Developed a custom Kubernetes operator (initially in C\#, rewritten in Go as KARA) to dynamically autoscale on-demand Azure DevOps runners, eliminating CI/CD bottlenecks.
 				\item Modernized legacy CI/CD pipelines and infrastructure on Azure, refactoring obsolete services and defining department-wide reusable pipeline templates.
-				\item Operated observability stacks (Prometheus, Grafana, ELK, EFK) and built a custom Prometheus exporter for a critical application, enabling precise SLI monitoring that directly led to achieving target SLOs.
-				\item Engineered a custom Prometheus exporter for an enterprise application, enabling precise SLI monitoring and ensuring SLO compliance.
+				\item Operated observability stacks (Prometheus, Grafana, ELK, EFK) and built a custom Prometheus exporter for an enterprise application, enabling precise SLI monitoring and ensuring SLO compliance.
 			\end{itemize}
 		}
 
 		\cvsectionright{Projects}
 
-		\cvevent{ACP Cloud Platform}{
+		\cvevent{ACP Cloud Platform}{Infrastructure \& Deployment Automation}{
 			Development and integration of a comprehensive automation layer into the existing enterprise cloud platform for AWS, Azure, GCP, and OpenStack. Automation of compute, storage, networking, and PaaS services, as well as integration with existing business processes to enable the standardized provisioning of cloud resources.
 		}
 
-		\cvevent{LFP (League de Football)}{
+		\cvevent{LFP (League de Football)}{Cloud Infrastructure \& CI/CD}{
 			Development and integration of DevOps and cloud infrastructure solutions, focusing on infrastructure automation, CI/CD pipelines, and Infrastructure as Code (IaC). Automation of deployment processes, configuration management, and monitoring to ensure scalable, reliable, and efficient platform operations.
 		}
 
-		\cvevent{MCIT (Digital Identity)}{
+		\cvevent{MCIT (Digital Identity)}{Infrastructure Provisioning}{
 			Development and integration of DevOps and cloud infrastructure solutions for Egypt’s Unified Digital Identity platform, focusing on infrastructure automation, CI/CD pipelines infra. Automation of deployment processes, configuration management, and infrastructure monitoring to ensure scalable, secure, and reliable platform operations, supporting the delivery and management of digital identity services.
 		}
 
